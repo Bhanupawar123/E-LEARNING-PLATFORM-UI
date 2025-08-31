@@ -1,0 +1,226 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f0ff 0%, #ffffff 100%);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #007acc;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ffdd57;
+}
+
+main {
+  flex-grow: 1;
+  padding: 40px 60px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #007acc 0%, #00b4ff 100%);
+  color: white;
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #ffdd57;
+  color: #007acc;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(255,221,87,0.5);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffc107;
+  color: #004a99;
+}
+
+.course-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-card {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.course-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #007acc;
+}
+
+.course-card p {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.course-detail {
+  padding: 20px 0;
+}
+
+.course-detail h2 {
+  color: #007acc;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.course-detail p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.main-video {
+  margin-bottom: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.video-playlist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.lesson {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lesson:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.lesson h4 {
+  margin-top: 0;
+  color: #007acc;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+progress {
+  width: 100%;
+  height: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  appearance: none;
+  -webkit-appearance: none;
+  margin-bottom: 15px;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.2);
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+}
+
+progress::-webkit-progress-value {
+  background-color: #007acc;
+  border-radius: 12px;
+  transition: width 0.3s ease;
+}
+
+progress::-moz-progress-bar {
+  background-color: #007acc;
+  border-radius: 12px;
+  transition: width 0.3s ease;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,122,204,0.5);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Details</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Course Details</h1>
+    <nav>
+      <a href="website.html">Home</a>
+      <a href="courses.html">Courses</a>
+    </nav>
+  </header>
+
+  <section class="course-detail">
+    <h2>JavaScript Essentials</h2>
+    <p>Learn the core concepts of JavaScript with real-world projects.</p>
+
+    <h3>Course Video:</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/W6NZfCO5SIk" 
+      title="JavaScript Tutorial for Beginners"></iframe>
+
+    <h3>Progress Tracking:</h3>
+    <progress id="progressBar" value="40" max="100"></progress>
+    <p id="progressText">Progress: 40%</p>
+    <button onclick="increaseProgress()">Mark as Completed</button>
+  </section>
+</body>
+</html>
